@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_htwf7j5",
-        "template_eicjv4u",
+        process.env.REACT_APP_SERVICE,
+        process.env.REACT_APP_TEMPLATE,
         form.current,
-        "V3vd-movOOGSjSLDY"
+        process.env.REACT_APP_USER
       )
       .then((result) => alert("Message sent successfully."))
       .catch((e) => console.log(e));
