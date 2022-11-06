@@ -83,15 +83,12 @@
   font-size: 1.8rem;
 }
 
-.icon:hover {
-  cursor: pointer;
-}
-
 .button {
   border: none;
   border-radius: 50%;
   padding: 1rem 1.1rem;
   transition: all 1s ease;
+  cursor: pointer;
 }
 
 .button:hover {

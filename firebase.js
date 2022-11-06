@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const storageRef = ref(
   storage,
-  "gs://portfolio-b58ee.appspot.com/Itish's Resume (3).pdf"
+  "gs://portfolio-b58ee.appspot.com/Itish's Resume (4).pdf"
 );
 
 export default storageRef;

@@ -11,6 +11,7 @@ import classes from "../styles/index.module.css";
 
 const Index = () => {
   const [show, setShow] = useState(false);
+
   return (
     <div className={classes.container}>
       <Main setShow={setShow} />
