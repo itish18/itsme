@@ -53,9 +53,6 @@
   gap: 5px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
-}
-
 .input input {
   padding: 10px;
   font-size: 1rem;
@@ -69,6 +66,7 @@
   font-size: 1rem;
   border-radius: 8px;
   outline: none;
+  resize: none;
 }
 
 .buttonBox {
@@ -93,4 +91,28 @@
   cursor: pointer;
   background: black;
   color: white;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .flex {
+    height: 110vh;
+  }
+  .box {
+    gap: 10px;
+  }
+  .heading2 {
+    font-size: auto;
+  }
+  .form {
+    width: 100%;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
 }

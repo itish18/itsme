@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 import classes from "../styles/Main.module.css";
@@ -8,12 +8,19 @@ const Main = ({ setShow }) => {
   const router = useRouter();
 
   const [showText, setShowText] = useState({
-    first: true,
+    first: false,
     second: false,
     third: false,
   });
 
   const [showList, setShowList] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText({ first: true, second: false, third: false });
+    }, 11000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const list = [
     { name: "About me", link: "#about" },
@@ -30,7 +37,9 @@ const Main = ({ setShow }) => {
           <source src="/space.mp4" type="video/mp4" />
         </video>
       </div>
+
       <div className={classes.flex}>
+        <img src="/ufo1.png" className={classes.ufo} />
         <div className={classes.box}>
           {showText.first && (
             <Typewriter

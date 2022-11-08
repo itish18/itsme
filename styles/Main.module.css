@@ -14,20 +14,21 @@
   position: absolute;
   height: 100vh;
   width: 100%;
-
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
 }
 
 .box {
   text-align: center;
-
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  margin-top: 6%;
+  margin-top: -11rem;
   letter-spacing: 4px;
   font-size: 1.8rem;
   font-weight: 700;
@@ -39,8 +40,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1.5rem;
-  margin-top: 5%;
+  gap: 1.3rem;
+
   animation: fadeInAnimation ease 3s;
 }
 
@@ -87,6 +88,12 @@
   animation: rocket 1s ease infinite, fadeInAnimation ease 3s;
 }
 
+.ufo {
+  margin-top: 7rem;
+  transform: translateY(-70%);
+  animation: ufoFwd 10s ease;
+}
+
 @media screen and (min-width: 300px) and (max-width: 479px) {
   .box {
     font-size: 1.4rem;
@@ -101,9 +108,12 @@
   .image {
     width: 30px;
   }
+  .ufo {
+    width: 50%;
+  }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 800px) {
   .image {
     display: none;
   }
@@ -139,5 +149,23 @@
   }
   100% {
     transform: rotate(180deg) translateY(0);
+  }
+}
+
+@keyframes ufoFwd {
+  0% {
+    transform: translateX(-1000%) translateY(0%);
+  }
+  50% {
+    transform: translateX(1000%);
+  }
+  75% {
+    transform: translateX(-40%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateY(-70%);
   }
 }
