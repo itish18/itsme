@@ -27,34 +27,34 @@ const Projects = () => {
   const list = [
     {
       name: "Talkit",
-      link: "https://ta1kit.herokuapp.com",
+      link: "https://talkit.cyclic.app",
       desc: "A social media platform where people can interact with each other.",
       image: image1.src,
     },
     {
       name: "Get4U",
-      link: "https://get4u.herokuapp.com/",
+      link: "https://get4u.cyclic.app",
       desc: "An E-commerce website which can help people to make their business online.",
       image: image2.src,
     },
     {
       name: "Resume Builder",
-      link: "https://resumecreater01.herokuapp.com/",
+      link: "https://resume-roan-seven.vercel.app",
       desc: "Website which can can be used to create a job ready resume.",
       image: image3.src,
     },
     {
       name: "Appointment Manager",
-      link: "https://aqueous-earth-95645.herokuapp.com/",
+      link: "https://dead-gold-caiman-tux.cyclic.app/",
       desc: "A website that can help you to remember your appointments.",
       image: image4.src,
     },
-    {
-      name: "Sleep Tracker",
-      link: "https://dailysleeptrackr.herokuapp.com/",
-      desc: "Now track and manage your sleep schedule with help of this website.",
-      image: image5.src,
-    },
+    // {
+    //   name: "Sleep Tracker",
+    //   link: "https://dailysleeptrackr.herokuapp.com/",
+    //   desc: "Now track and manage your sleep schedule with help of this website.",
+    //   image: image5.src,
+    // },
   ];
   return (
     <div className={classes.flex} id="projects">
